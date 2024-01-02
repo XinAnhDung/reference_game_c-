@@ -1,0 +1,6 @@
+﻿  main.cpp
+E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_3\Game_3\mylib.h(27,26): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_3\Game_3\mylib.h(27,29): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_3\Game_3\main.cpp(42,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_3\Game_3\main.cpp(141,18): warning C4309: '=': truncation of constant value
+  Game_3.vcxproj -> E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_3\Debug\Game_3.exe

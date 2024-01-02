@@ -1,0 +1,4 @@
+﻿  function.cpp
+E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_2\Game_2\function.cpp(145,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_2\Game_2\function.cpp(456,21): warning C4018: '<': signed/unsigned mismatch
+  Game_2.vcxproj -> E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_2\Debug\Game_2.exe

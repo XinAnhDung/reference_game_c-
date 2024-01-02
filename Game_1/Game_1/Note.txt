@@ -1,0 +1,87 @@
+﻿#include<iostream>
+#include "mylib.h"
+using namespace std;
+
+int main()
+{
+	int color = 1;// biến màu
+	int x = 10, y = 0;
+	int x_cu = x, y_cu = y;
+	int margin = 0; // biên dưới: 0, trên :1; trái: 2, phải: 3
+	while (true)
+	{	
+		//system("cls");// làm nháy các vật thể tĩnh
+		//c2: xóa vị trí cũ
+		gotoXY(x_cu, y_cu);
+		cout << "                      ";
+		gotoXY(x, y);
+		cout << "Luc Nguyen Truong Thao";
+		// gán lại vị tri cũ để thực hiện xóa dòng trước đó
+		x_cu = x, y_cu = y;
+		SetColor(color++); // tăng màu liên tục
+		if (color == 16) color = 1;
+		// điều khiển
+		// phím mũi tên là phím kép nên ta kiểm tra 2 lần
+		if (_kbhit()==true) {
+			char kt = _getch();
+			if (kt == 'w') {
+				margin = 1;
+			}
+			else if (kt == 's') {
+				margin = 0;
+			}
+			else if (kt == 'a') {
+				margin = 2;
+			}
+			else if (kt == 'd') {
+				margin = 3;
+			}
+			if (kt == -32) {
+				// kiểm tra lần 2
+				kt = _getch();
+				// 72: lên; 80: đi xuống; 75: sang trái; 77: sang phải
+				if (kt == 72) {
+					margin = 1;
+				}
+				else if (kt == 80) {
+					margin = 0;
+				}
+				else if (kt == 75) {
+					margin = 2;
+				}
+				else if (kt == 77) {
+					margin = 3;
+				}
+			}
+		}
+		// kiểm tra biên
+		if (margin==0) {
+			y++;
+		}
+		else if (margin == 1) {
+			y--;
+		}
+		else if (margin == 2) {
+			x--;
+		}
+		else if (margin == 3) {
+			x++;
+		}
+		if (y == 30) {
+			margin = 1;
+		}
+		else if (y == 0) {
+			margin = 0;
+		}
+		if (x == 100) {
+			margin = 2;
+		}
+		else if (x == 0) {
+			margin = 3;
+		}
+		Sleep(100);
+	}
+	//_getch();
+	system("pause");
+	return 0;
+}

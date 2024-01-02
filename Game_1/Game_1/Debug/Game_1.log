@@ -1,0 +1,6 @@
+﻿  main.cpp
+E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_1\Game_1\mylib.h(27,26): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_1\Game_1\mylib.h(27,29): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_1\Game_1\main.cpp(31,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_1\Game_1\main.cpp(42,19): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+  Game_1.vcxproj -> E:\GAME_WTIH_VISUAL_STIDIO_C++\Game_1\Debug\Game_1.exe
